@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script name: brightness
+# Author: Cesar A M dos Santos
+# cesaraugusto.dossantos@richmond.edu
+
+# Changing brightness
+
+echo 1600 > /sys/class/backlight/intel_backlight/brightness

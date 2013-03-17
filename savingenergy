@@ -1,0 +1,23 @@
+#!/bin/bash
+# Script name: savingenergy
+# Author: Cesar A M dos Santos
+# cesaraugusto.dossantos@richmond.edu
+
+# Saving energy by darkening screen
+
+clear
+echo "Saving Energy Script. Press 'q' to quit or 's' to save energy: "
+
+while true
+do
+  read -s -n 1 key
+  case "$key" in
+    's') gnome-screensaver-command -a
+         ;;
+    'q') echo "See you again $USER!"
+         exit
+         ;;
+    *)   echo "Wrong option. Try again."
+         ;;
+  esac
+done

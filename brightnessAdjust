@@ -1,0 +1,9 @@
+#!/bin/bash
+# Script name: brightnessAdjust
+# Author: Cesar A M dos Santos
+# cesaraugusto.dossantos@richmond.edu
+
+echo -n "Choose a brightness value (0 to 4882): "
+read key
+
+echo $key > /sys/class/backlight/intel_backlight/brightness
